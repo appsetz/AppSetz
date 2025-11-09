@@ -88,7 +88,7 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 		scene.add(points);
 
 		let count = 0;
-		let animationId: number;
+		let animationId: number = 0; // Initialize with default value
 
 		// Animation function
 		const animate = () => {
@@ -139,8 +139,8 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 
 		window.addEventListener('resize', handleResize);
 
-		// Start animation
-		animate();
+		// Start animation and get initial ID
+		animationId = requestAnimationFrame(animate);
 
 		// Store references
 		sceneRef.current = {
