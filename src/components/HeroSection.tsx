@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { XCircle } from 'lucide-react';
-import { ShaderAnimation } from '@/components/ShaderAnimation';
+import { DottedSurface } from '@/components/DottedSurface';
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -16,7 +16,7 @@ export default function HeroSection() {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <ShaderAnimation />
+        <DottedSurface />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">

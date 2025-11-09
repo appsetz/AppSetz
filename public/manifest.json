@@ -1,0 +1,27 @@
+{
+  "name": "Appsetz — Digital Product Agency",
+  "short_name": "Appsetz",
+  "description": "Full-stack digital product agency helping startups build modern, scalable websites, mobile apps, and SaaS products.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/WhatsApp Image 2025-11-10 at 01.54.27_b1b811b6.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/WhatsApp Image 2025-11-10 at 01.54.27_b1b811b6.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "technology"],
+  "lang": "en-US"
+}
+

@@ -35,7 +35,12 @@ export default function BackgroundAnimation() {
     if (dimensions.width === 0 || dimensions.height === 0) return;
 
     const newParticles: Particle[] = [];
-    const particleCount = Math.min(50, Math.floor((dimensions.width * dimensions.height) / 15000));
+    // Reduce particles on mobile for better performance
+    const isMobile = dimensions.width < 768;
+    const particleCount = Math.min(
+      isMobile ? 30 : 50,
+      Math.floor((dimensions.width * dimensions.height) / (isMobile ? 20000 : 15000))
+    );
 
     for (let i = 0; i < particleCount; i++) {
       newParticles.push({
