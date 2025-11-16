@@ -7,7 +7,7 @@ import { DottedSurface } from '@/components/DottedSurface';
 
 export default function HeroSection() {
   const scrollToContact = () => {
-    window.location.href = '/contact';
+    window.location.href = 'https://cal.com/reachpavankumar-txgih5';
   };
   const goToProjects = () => {
     window.location.href = '/projects';
